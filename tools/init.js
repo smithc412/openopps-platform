@@ -1,6 +1,8 @@
-var dbTools = require('./lib/dbTools');
-var fs = require("fs");
 var async = require("async");
+var fs = require("fs");
+var Promise = require('bluebird');
+
+var dbTools = require('./lib/dbTools');
 var dataDir = __dirname + '/init-tag-data'
 
 dbTools.checkTagTableSetup()
