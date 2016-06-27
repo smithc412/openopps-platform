@@ -22,6 +22,8 @@
      appEnv = cfenv.getAppEnv(),
      userEnv = appEnv.getServiceCreds('env-openopps');
 
+  console.log("hi")
+
  // Import vars from Cloud Foundry service
  if (userEnv) extend(process.env, userEnv);
 
